@@ -1,0 +1,32 @@
+textarea.in {
+	height: 20rem;
+	width: 30%;
+}
+
+textarea.out {
+	height: 20rem;
+	width: 30%;
+}
+.inline {
+	display: inline-block;
+}
+.transform {
+	padding: 2rem;
+}
+.key {
+	display: block;	
+	height: 10rem;
+
+}
+
+.key-label{
+	margin: 1rem 0;
+	text-align: center;
+}
+
+
+.transform button{
+	margin: 1rem 0;
+	font-size: 1.5rem;
+	width: 100%;
+}

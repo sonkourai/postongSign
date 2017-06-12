@@ -1,0 +1,19 @@
+<html>
+<head>
+<meta charset="utf-8">
+	<title>从JSON获取签名</title>
+	<link rel="stylesheet" type="text/css" href="css/sign.css">
+	<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="js/md5.js"></script>
+	<script type="text/javascript" src="js/sign.js"></script>
+</head>
+<body>
+	<textarea class="in" placeholder="请输入报文请求JSON"></textarea>
+	<div class="transform inline">
+		<div class="key-label">MD5密钥</div>
+		<textarea class="key" placeholder="请输入MD5密钥"></textarea>
+		<button onclick="getSign()">获取签名</button>
+	</div>
+	<textarea class="out" placeholder="此处显示签名结果"></textarea>
+</body>
+</html>
