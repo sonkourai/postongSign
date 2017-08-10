@@ -1,14 +1,25 @@
-
 <html>
 <head>
 <meta charset="utf-8">
-	<title>从JSON获取签名</title>
+	<title>从GET请求链接或POST请求JSON获取签名</title>
 	<link rel="stylesheet" type="text/css" href="css/sign.css">
 	<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
 	<script type="text/javascript" src="js/md5.js"></script>
 	<script type="text/javascript" src="js/sign.js"></script>
 </head>
 <body>
+	<h2>从GET请求链接获取签名</h2>
+	<textarea class="in in-link" placeholder="请输入GET请求连接" spellcheck="false"></textarea>
+	<div class="transform inline">
+		<div class="key-label">MD5密钥</div>
+		<textarea class="key key-link" placeholder="请输入MD5密钥" spellcheck="false"></textarea>
+		<button onclick="getSignFromLink()">获取签名</button>
+	</div>
+	<textarea class="out out-link" placeholder="此处显示签名结果" spellcheck="false"></textarea>
+
+	<div class="clear-line"></div>
+
+	<h2>从POST请求JSON获取签名</h2>
 	<textarea class="in in-json" placeholder="请输入报文请求JSON" spellcheck="false"></textarea>
 	<div class="transform inline">
 		<div class="key-label">MD5密钥</div>
@@ -16,5 +27,9 @@
 		<button onclick="getSignFromJson()">获取签名</button>
 	</div>
 	<textarea class="out out-json" placeholder="此处显示签名结果" spellcheck="false"></textarea>
+
+	
+
+
 </body>
 </html>

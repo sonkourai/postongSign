@@ -1,21 +1,25 @@
+h2 {
+	color: red;
+	margin: 0.5rem 0 0 0 ;
+}
 textarea.in {
-	height: 20rem;
+	height: 15rem;
 	width: 30%;
 }
 
 textarea.out {
-	height: 20rem;
+	height: 15rem;
 	width: 30%;
 }
 .inline {
 	display: inline-block;
 }
 .transform {
-	padding: 2rem;
+	padding: 2rem 2rem 0rem 2rem;
 }
 .key {
 	display: block;	
-	height: 10rem;
+	height: 8rem;
 
 }
 
@@ -24,9 +28,15 @@ textarea.out {
 	text-align: center;
 }
 
-
 .transform button{
 	margin: 1rem 0;
 	font-size: 1.5rem;
 	width: 100%;
+}
+
+.clear-line {
+    height: 1px;
+    padding: 0px;
+    background-color: #D5D5D5;
+    overflow: hidden;
 }
