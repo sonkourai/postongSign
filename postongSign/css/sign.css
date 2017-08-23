@@ -19,12 +19,11 @@ textarea.out {
 }
 .key {
 	display: block;	
-	height: 8rem;
+	height: 10rem;
 
 }
 
 .key-label{
-	margin: 1rem 0;
 	text-align: center;
 }
 
