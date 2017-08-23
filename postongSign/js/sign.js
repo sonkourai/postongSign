@@ -35,7 +35,11 @@ function getSignFromJson() {
 					hash = md5(target).toUpperCase();
 				}
 				else {
-					alert("请输入MD5密钥！")
+					alert("请输入MD5密钥！否则使用默认密钥：fcAmtnx7MwismjWNhNKdHC44mNXtnEQeJkRrhKJwyrW2ysRR");
+					$('.key-json').val('fcAmtnx7MwismjWNhNKdHC44mNXtnEQeJkRrhKJwyrW2ysRR');
+					key = $('.key-json').val();
+					target = target.slice(1) + key;
+					hash = md5(target).toUpperCase();
 				}
 			}
 		}
@@ -98,7 +102,11 @@ function getSignFromLink() {
 					hash = md5(target).toUpperCase();
 				}
 				else {
-					alert("请输入MD5密钥！")
+					alert("请输入MD5密钥！否则使用默认密钥：fcAmtnx7MwismjWNhNKdHC44mNXtnEQeJkRrhKJwyrW2ysRR");
+					$('.key-json').val('fcAmtnx7MwismjWNhNKdHC44mNXtnEQeJkRrhKJwyrW2ysRR');
+					key = $('.key-json').val();
+					target = target.slice(1) + key;
+					hash = md5(target).toUpperCase();
 				}
 			}
 		}
