@@ -12,7 +12,7 @@ function getSignFromJson() {
 					target += '&goods=[';
 					for (var g in json.goods){
 						var good = json.goods[g];
-						var ssdic = Object.keys(good);
+						var ssdic = Object.keys(good).sort();
 						target += '{';
 						for(var kk in ssdic) {
 							target += '"' + ssdic[kk] + '":"' + good[ssdic[kk]] + '",';
@@ -79,7 +79,7 @@ function getSignFromLink() {
 					target += '&goods=[';
 					for (var g in json.goods){
 						var good = json.goods[g];
-						var ssdic = Object.keys(good);
+						var ssdic = Object.keys(good).sort();
 						target += '{';
 						for(var kk in ssdic) {
 							target += '"' + ssdic[kk] + '":"' + good[ssdic[kk]] + '",';
