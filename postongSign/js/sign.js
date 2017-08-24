@@ -103,8 +103,8 @@ function getSignFromLink() {
 				}
 				else {
 					alert("请输入MD5密钥！否则使用默认密钥：fcAmtnx7MwismjWNhNKdHC44mNXtnEQeJkRrhKJwyrW2ysRR");
-					$('.key-json').val('fcAmtnx7MwismjWNhNKdHC44mNXtnEQeJkRrhKJwyrW2ysRR');
-					key = $('.key-json').val();
+					$('.key-link').val('fcAmtnx7MwismjWNhNKdHC44mNXtnEQeJkRrhKJwyrW2ysRR');
+					key = $('.key-link').val();
 					target = target.slice(1) + key;
 					hash = md5(target).toUpperCase();
 				}
