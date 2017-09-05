@@ -1,4 +1,4 @@
-var intValueOfGoods = ['goodsId', 'price', 'quantity'];
+var intValueOfGoods = [];//['goodsId', 'price', 'quantity'];
 function getSignFromJson() {
 	var sign = '';
 	var target = '';
