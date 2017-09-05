@@ -1,3 +1,4 @@
+var intValueOfGoods = ['goodsId', 'price', 'quantity'];
 function getSignFromJson() {
 	var sign = '';
 	var target = '';
@@ -15,7 +16,14 @@ function getSignFromJson() {
 						var ssdic = Object.keys(good);
 						target += '{';
 						for(var kk in ssdic) {
-							target += '"' + ssdic[kk] + '":"' + good[ssdic[kk]] + '",';
+							var v = good[ssdic[kk]];
+							if(intValueOfGoods.indexOf(ssdic[kk]) === -1) {
+								target += '"' + ssdic[kk] + '":"' + v + '",';
+							}
+							else {
+								target += '"' + ssdic[kk] + '":' + v + ',';
+							}
+							
 						}
 						target = target.slice(0, target.length-1);
 						target += '}';
@@ -82,7 +90,13 @@ function getSignFromLink() {
 						var ssdic = Object.keys(good);
 						target += '{';
 						for(var kk in ssdic) {
-							target += '"' + ssdic[kk] + '":"' + good[ssdic[kk]] + '",';
+							var v = good[ssdic[kk]];
+							if(intValueOfGoods.indexOf(ssdic[kk]) === -1) {
+								target += '"' + ssdic[kk] + '":"' + v + '",';
+							}
+							else {
+								target += '"' + ssdic[kk] + '":' + v + ',';
+							}
 						}
 						target = target.slice(0, target.length-1);
 						target += '}';
